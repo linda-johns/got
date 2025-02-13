@@ -6,7 +6,6 @@ import { GotHouseDetailsComponent } from '../got-house-details/got-house-details
 @Component({
   selector: 'app-got-houses',
   templateUrl: './got-houses.component.html',
-  styleUrl: './got-houses.component.css',
   standalone: false,
   encapsulation: ViewEncapsulation.None
 })

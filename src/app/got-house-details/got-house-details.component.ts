@@ -5,7 +5,6 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'app-got-house-details',
   templateUrl: './got-house-details.component.html',
-  styleUrl: './got-house-details.component.css',
   standalone: false
 })
 export class GotHouseDetailsComponent implements OnInit{

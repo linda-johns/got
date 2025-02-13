@@ -1,1 +1,33 @@
-<p>got-house-details works!</p>
+<mat-card appearance="outlined" style="padding: 50px">
+    <mat-card-header style="background-color: rgb(215, 227, 245); margin: 10px; border-radius: 15px;">
+        <mat-card-title style="font-weight: bold">
+            {{house['name'] || ''}}</mat-card-title>
+        <mat-card-subtitle>
+            {{house['region'] || ''}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            <span style="font-weight: bold;">Current Lord :</span>
+            {{getDisplayValue(currentLord,'name')}}
+        </p>
+        <p>
+            <span style="font-weight: bold;">Heir :</span>
+            {{getDisplayValue(heir,'name')}}
+        </p>
+        <p>
+            <span style="font-weight: bold;">Founded :</span>
+            {{house['founded'] || 'NA'}}
+        </p>
+        <p>
+            <span style="font-weight: bold;">Founder :</span>
+            {{getDisplayValue(founder,'name')}}
+        </p>
+        <p>
+            <span style="font-weight: bold;">Coat of Arms :</span>
+            {{house['coatOfArms'] || 'NA'}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button="mat-raised-button" (click)="close()">Close</button>
+    </mat-card-actions>
+</mat-card>
